@@ -98,9 +98,20 @@
 			</section>
 
 
-			<section class="post-comments">
-				<a id="show-disqus" class="post-comments-activate">{{t "Show Comments"}}</a>
-			    <div id="disqus_thread"></div>
+			<section class="post-full-comments">
+				<div id="disqus_thread"></div>
+				<script>
+				var disqus_config = function () {
+					this.page.url = "{{url absolute="true"}}";  
+					this.page.identifier = "ghost-{{comment_id}}"
+				};
+				(function() {
+				var d = document, s = d.createElement('script');
+				s.src = 'https://blog-billwen.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();
+				</script>
 			</section>
 
             {{#if @labs.subscribers}}

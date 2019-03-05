@@ -1,6 +1,6 @@
-# Attila
+# G-Attila
 
-A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/).
+A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/). A customized for https://blog.billwen.com.
 
 ## Demo
 
